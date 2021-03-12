@@ -65,14 +65,14 @@ int gotoMapNoAt(int targetRow, int targetCol)
 {
     if(targetRow < 1 || targetCol < 1)
         return 0;
-    FILE *mapLayout = fopen("mapLayout.txt", "r");
+    FILE *map_layout = fopen("map_layout.txt", "r");
     char c = ' ';
     int mapNo = 0, row = 1, col = 0;
-    fseek(mapLayout, 0, SEEK_SET);
+    fseek(map_layout, 0, SEEK_SET);
     //Seeking the target row
     while(row < targetRow && c != EOF)
     {
-        while((c = fgetc(mapLayout)) != '\n' && c != EOF);
+        while((c = fgetc(map_layout)) != '\n' && c != EOF);
         row++;
     }
     //Seeking the target column
@@ -80,15 +80,15 @@ int gotoMapNoAt(int targetRow, int targetCol)
     {
         mapNo = 0;
         if(c == ' ' || c == '\t' || c == '\n')
-            while((c = fgetc(mapLayout)) == ' ' && c == '\t');
+            while((c = fgetc(map_layout)) == ' ' && c == '\t');
         if(c >= '0' && c <= '9')
         {
             if(++col < targetCol)
-                while((c = fgetc(mapLayout)) >= '0' && c <= '9');
+                while((c = fgetc(map_layout)) >= '0' && c <= '9');
             else
             {
                 mapNo = c - '0';
-                while((c = fgetc(mapLayout)) >= '0' && c <= '9')
+                while((c = fgetc(map_layout)) >= '0' && c <= '9')
                 {
                     mapNo *= 10;
                     mapNo += c - '0';
@@ -97,7 +97,7 @@ int gotoMapNoAt(int targetRow, int targetCol)
             }
         }
     }
-    fclose(mapLayout);
+    fclose(map_layout);
     return mapNo;
 }
 void insertMapNo(int mapNo, int row, int col, map *ptr[])
@@ -125,18 +125,18 @@ void insertMapNo(int mapNo, int row, int col, map *ptr[])
 }
 int loadMaps()
 {
-    FILE *gameMap, *gameMapValues, *savedMap, *mapList;
+    FILE *gameMap, *gameMapValues, *savedMap, *map_list;
     char *mapName, *tmp, c = ' ';
     int xcount, ycount, i, mapCount = 1;
-    mapList = fopen("clclSupport/mapList.txt", "r");
-    while((c = fgetc(mapList)) != EOF)
+    map_list = fopen("clclSupport/map_list.txt", "r");
+    while((c = fgetc(map_list)) != EOF)
     {
-        fseek(mapList, -1, SEEK_CUR);
+        fseek(map_list, -1, SEEK_CUR);
         mapName = getMapName(mapCount, 0);
         gameMap = fopen(mapName, "w");
         tmp = mapName;
 
-        fscanf(mapList, "%s", mapName);
+        fscanf(map_list, "%s", mapName);
         if((savedMap = fopen(mapName, "r")) == NULL)
         {
             printf("The file %s is not present in the directory clclSupport/savedMaps/\n", mapName);
@@ -221,10 +221,10 @@ int loadMaps()
 }
 int loadMapLayout()
 {
-    FILE *mapLayout = fopen("mapLayout.txt", "r");
+    FILE *map_layout = fopen("map_layout.txt", "r");
     char c = ' ';
     int mapNo, row = 1, col = 0;
-    while((c = fgetc(mapLayout)) != EOF)
+    while((c = fgetc(map_layout)) != EOF)
     {
         if(c == '\n')
         {
@@ -235,16 +235,16 @@ int loadMapLayout()
         {
             col++;
             mapNo = c - '0';
-            while((c = fgetc(mapLayout)) >= '0' && c <= '9')
+            while((c = fgetc(map_layout)) >= '0' && c <= '9')
             {
                 mapNo *= 10;
                 mapNo += c - '0';
             }
             if(c != EOF)
-                fseek(mapLayout, -1, SEEK_CUR);
+                fseek(map_layout, -1, SEEK_CUR);
             insertMapNo(mapNo, row, col, gameMap);
         }
     }
-    fclose(mapLayout);
+    fclose(map_layout);
     return 0;
 }
