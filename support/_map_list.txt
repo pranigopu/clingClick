@@ -1,0 +1,9 @@
+support/savedMaps/arena1.txt
+support/savedMaps/arena2.txt
+support/savedMaps/arena3.txt
+support/savedMaps/arena4.txt
+support/savedMaps/arena5.txt
+support/savedMaps/arena6.txt
+support/savedMaps/arena7.txt
+support/savedMaps/arena8.txt
+support/savedMaps/arena9.txt
