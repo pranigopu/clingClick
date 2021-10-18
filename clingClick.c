@@ -1,4 +1,4 @@
-#include "clclSupport/clclFunctions.h"
+#include "support/__CUNCTUS__.h"
 int message(int);
 void regen(int);
 int main()
