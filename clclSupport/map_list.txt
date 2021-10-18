@@ -1,9 +1,0 @@
-clclSupport/savedMaps/arena1.txt
-clclSupport/savedMaps/arena2.txt
-clclSupport/savedMaps/arena3.txt
-clclSupport/savedMaps/arena4.txt
-clclSupport/savedMaps/arena5.txt
-clclSupport/savedMaps/arena6.txt
-clclSupport/savedMaps/arena7.txt
-clclSupport/savedMaps/arena8.txt
-clclSupport/savedMaps/arena9.txt
