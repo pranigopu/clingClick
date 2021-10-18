@@ -85,8 +85,10 @@ void approach()
         while(ptr -> source != all[SET])
         {
             //LINES OF CODE TO SEE THE COMPLETED PATH 
-            gotoxy(ptr -> x, ptr -> y);
-            printf("*");
+            //gotoxy(ptr -> x, ptr -> y);
+            //printf("*");
+            
+            // NECESSARY LINE
             ptr = ptr -> source;
         }
         delay(0.08);
