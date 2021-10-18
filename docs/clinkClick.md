@@ -1,32 +1,27 @@
-# Behind this project
+# Project summary
 
-## Why i chose to do this ?
+## Purpose
+Video games have always fascinated me. Not as much their graphical aspects (for which I have deep respect and admiration) as their logical aspects. How do NPC's move in relation to the player? How are the various mechanics such as inventory management, motion and combat implemented?
 
-### Summary of what i learnt
+I attempted to recreate some of these ideas using the knowledge I had, which was fairly limited, as is reflected in the limited capacities of the game. I am proud of this work, but it can be so much more.
 
-### How this is implemented here?
+## Features
+- Turn based movement
+- Arrow key controls
+- Directional strikes (using WASD)
+- Inventory (for switching weapons and collected items)
+- Ranged, melee and tool-based weapons
+- Ability to collect and replace the obstacles
+- Pathfinding enemy (highly imperfect for now)
+- Powerful enemy
 
-
-### 
-
-
-## What is diffrent ?
-
-### Beyond the concepts
-
-
-### My naive ideas
-
-
-
+## Potential features
+- Multiple maps
+- Expanded space to move (involving dynamic map switching, based on the arrangement of the locations in relation to each other)
+- Smarter enemy (especially with improved pathfinding)
+- More enemies of different varieties
 
 ## Conclusion
-
-### What worked?
-
-### What needs more study / research?
-
-
-
-## What next ?
+### Flaw in my approach
+My approach was less about learning from the available body of knowledge and more about recreating such ideas using my own knowledge as far as possible. This is not the best approach to learning, I have realised, as it is extremely time-consuming and ultimately a poor use of available resources to accelerate my learning.
 
