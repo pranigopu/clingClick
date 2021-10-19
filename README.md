@@ -15,7 +15,7 @@ I attempted to recreate some of these ideas using the knowledge I had, which was
 - Inventory (for switching weapons and collected items)
 - Ranged, melee and tool-based weapons
 - Ability to collect and replace the obstacles
-- Pathfinding enemy (highly imperfect for now)
+- Pathfinding enemy (breaks in some scenarios)
 - Powerful enemy
 
 ## Potential features
