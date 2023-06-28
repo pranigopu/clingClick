@@ -27,7 +27,7 @@ I attempted to recreate some of these ideas using the knowledge I had, which was
 ## Conclusion
 
 ### Result
-Other than the pathfinding, everything in the code works robustly. I am especially happy with the player's ability to mine, collect and replace the obstacles in the arena. Even the pathfinding works to a great extent, and only breaks some scenarios. However, the game is limited, and the objective (of killing the enemy) is either boring (the enemy is too weak) or impossible (the enemy is too strong), based on the settings I apply to the parameters in my code. I need to work on expanding the objectives.
+Other than the pathfinding, everything in the code works robustly. I am especially happy with the player's ability to mine, collect and replace the obstacles in the arena. Even the pathfinding works to a great extent, and only breaks in some scenarios. However, the game is limited, and the objective (of killing the enemy) is either boring (the enemy is too weak) or impossible (the enemy is too strong), based on the settings I apply to the parameters in my code. I need to work on expanding the objectives.
 
 ### Benefit in organisation and separation of functionalities
 For such a relatively complex program, I would have had a much harder time had I not organised the ideas, functionalities and implementations carefully BEFORE any coding took place. I initially spent a good amount of time figuring out my approach, and the logic of the game, before writing a single line of code, and I think I want to maintain this practice for future projects.
