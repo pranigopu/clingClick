@@ -4,9 +4,7 @@ This is an attempt at a single-player combat game, with a single powerful enemy 
 # Project summary
 
 ## Purpose
-Video games have always fascinated me. Not as much their graphical aspects (for which I have deep respect and admiration) as their logical aspects. How do NPC's move in relation to the player? How are the various mechanics such as inventory management, motion and combat implemented?
-
-I attempted to recreate some of these ideas using the knowledge I had, which was fairly limited, as is reflected in the limited capacities of the game. I am proud of this work, but it can be so much more.
+Video games have always fascinated me. Not as much their graphical aspects (for which I have deep respect and admiration) as their logical aspects. How do NPC's move in relation to the player? How are the various mechanics such as inventory management, motion and combat implemented? I attempted to recreate some of these ideas using the knowledge I had, which was fairly limited, as is reflected in the limited capacities of the game. I am proud of this work, but it can be so much more.
 
 ## Features
 - Turn based movement
